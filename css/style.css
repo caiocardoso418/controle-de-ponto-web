@@ -1,6 +1,26 @@
 .data-hora {
+    position: static;
+    background: gray;
     text-align: center;
+    font-family: fantasy;
+    font-size: large;
+    width: 38%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+
 }
+
+#btn-bater-ponto {
+    width: 100px;
+    height: 30px;
+    position: fixed;
+    top: 30%;
+    left: 47%;
+    border-radius: 10px
+
+}
+
 
 #btn-dialog-fechar {
     position: absolute;
