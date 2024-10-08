@@ -1,7 +1,7 @@
 .data-hora {
-    position: static;
-    background: gray;
     text-align: center;
+    font-weight: 400;
+    font-style: normal;
     font-family: fantasy;
     font-size: large;
     width: 38%;
@@ -9,70 +9,81 @@
     border: 3px solid black;
     border-radius: 10px;
     margin-top: 200px;
-
+    background:  linear-gradient( 20deg, rgb(37, 40, 211), rgb(30, 201, 195), rgb(18, 194, 141) );
 }
-
-#btn-bater-ponto {
-    width: 100px;
-    height: 30px;
-    position: fixed;
-    top: 50%;
-    left: 47%;
-    border-radius: 10px
-    
-    
-
-}
-
-
 #btn-dialog-fechar {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-/* Posicionamento do alerta no topo da página com position fixed */
 #alerta-registro-ponto {
-    top: 30%;
-    left: 50%;
-    width: 100%;
-    background-color: #ccc;
-
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: green;
+    padding: 20px;
 }
 
 #alerta-registro-ponto p {
     text-align: center;
-    /* TO-DO: */
-    /* Estilizar */
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* TO-DO: */
-/* Adicionar código CSS para alterar a opacidade */
+
+#alerta-registro-ponto-fechar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 .hidden {
-    /* TO-DO: */
-    /* enviar para fora da página */
     opacity: 0;
 }
 
 .show {
-    /* TO-DO: */
-    /* trazer para dentro da página */
     opacity: 1;
 }
 
 
-
-#dialog-ponto {
-    border: 3px solid black;
-    border-radius: 10px
-    
+#div-btn-bater-ponto {
+    width: 100px;
+    height: 30px;
+    position: fixed;
+    top: 50%;
+    left: 48%;
 }
 
-.titulo{
-    font-family: fantasy;
+#btn-bater-ponto {
+    padding: 20px;
+    background:  linear-gradient( 20deg, rgb(37, 40, 211), rgb(30, 201, 195), rgb(18, 194, 141) );
+    color: white;
+    font-size: 1.3rem;
+    border: 0px;
+    border: 2px solid black;
+    border-radius: 10px
+
+}
+
+.data-hora p {
+    font-size: 2rem; 
+}
+
+#dialog-ponto p {
+    font-size: 1.5rem;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    
+}
+
+#dialog-ponto select {
+    padding: 20px;
+    font-size: 1.3rem;
+}
+
+#btn-dialog-bater-ponto {
+    padding: 20px;
+    font-size: 1.3rem;
 }
